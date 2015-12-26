@@ -1,6 +1,6 @@
 readfiles <- function(type)
 {
-  filename1 <- paste("X_",type,".txt", sep="");
+  filename1 <- paste(type, "/X_",type,".txt", sep="");
   file1 <- read.table(filename1, sep = "", header = FALSE);
   filename4 <- "features.txt";
   file4 <- read.table(filename4);
@@ -34,8 +34,8 @@ extractMeanAndStd <- function(mydf)
 
 readSubjAndY <- function(type)
 {
-  filename1 <- paste("y_",type, ".txt", sep="");
-  filename2 <- paste("subject_",type, ".txt", sep="");
+  filename1 <- paste(type,"/y_",type, ".txt", sep="");
+  filename2 <- paste(type,"/subject_",type, ".txt", sep="");
   
   file1 <- read.table(filename1);
   file2 <- read.table(filename2);
@@ -112,7 +112,6 @@ fifth <- function(mydf, amountActivities, amountSubjects, amountVariablesToMean)
   resmean['Subject'] <- mapply(getSubjectUsingType, position, amountSubjects);
   return (resmean); 
 }
-
 main<-function(path, amountTypesActivity = 6, amountSubjects = 30)
 {
   setwd(path);
