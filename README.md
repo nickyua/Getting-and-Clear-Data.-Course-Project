@@ -1,6 +1,7 @@
 # Getting-and-Clear-Data.-Course-Project
 
-To run program you must compile code and run function main(path), when path - working directory 
+To run program you must compile code and run function main(path), when path - working directory .
+Working directory must have - two folders  - "train", "test"(both with three files - "X_...txt", "y_...txt", "subject_...txt"), and files "activity_labels.txt", "features.txt";
  
 main(path) - main function, which run program. path - work directory path;
 
