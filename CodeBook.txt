@@ -1,0 +1,93 @@
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals Accelometer-XYZ and Gyroscope-XYZ. 
+These time domain signals (prefix 'Time' to denote time) were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TimeBodyAccelometer-XYZ and TimeGravityAccelometer-XYZ) 
+using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccelometerJerk-XYZ and TimeBodyGyroscopeJerk-XYZ). 
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccelometerMagnitude, 
+TimeGravityAccelometerMagnitude, TimeBodyAccelometerJerkMagnitude, TimeBodyGyroscopeMagnitude, TimeBodyGyroscopeJerkMagnitude). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FrequencyBodyAccelometer-XYZ, FrequencyBodyAccelometerJerk-XYZ, FrequencyBodyGyroscope-XYZ, 
+FrequencyBodyAccelometerMagnitude. (Note the 'Frequency' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+For every pair TypeActivity-Subject - there are in dataframe mean for all observations 
+
+VARIABLE									TYPE			VALUES OR AND EXPLANTATION
+"TimeBodyAccelometerMeanX" 					numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body signal
+"TimeBodyAccelometerMeanY"					numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body signal
+"TimeBodyAccelometerMeanZ"					numeric			range(-1, 1), mean for features come from the accelerometer, z directional, body signal
+"TimeGravityAccelometerMeanX"				numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body gravity signal
+"TimeGravityAccelometerMeanY"				numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body gravity signal
+"TimeGravityAccelometerMeanZ"				.....			....
+"TimeBodyAccelometerJerkMeanX"				.....			....
+"TimeBodyAccelometerJerkMeanY"
+"TimeBodyAccelometerJerkMeanZ"
+"TimeBodyGyroscopeMeanX"
+"TimeBodyGyroscopeMeanY"
+"TimeBodyGyroscopeMeanZ"
+"TimeBodyGyroscopeJerkMeanX"
+"TimeBodyGyroscopeJerkMeanY"
+"TimeBodyGyroscopeJerkMeanZ"
+"TimeBodyAccelometerMagnitudeMean"
+"TimeGravityAccelometerMagnitudeMean"
+"TimeBodyAccelometerJerkMagnitudeMean"
+"TimeBodyGyroscopeMagnitudeMean"
+"TimeBodyGyroscopeJerkMagnitudeMean"
+"FrequencyBodyAccelometerMeanX"
+"FrequencyBodyAccelometerMeanY"
+"FrequencyBodyAccelometerMeanZ"
+"FrequencyBodyAccelometerJerkMeanX"
+"FrequencyBodyAccelometerJerkMeanY"
+"FrequencyBodyAccelometerJerkMeanZ"
+"FrequencyBodyGyroscopeMeanX"
+"FrequencyBodyGyroscopeMeanY"
+"FrequencyBodyGyroscopeMeanZ"
+"FrequencyBodyAccelometerMagnitudeMean"
+"FrequencyBodyBodyAccelometerJerkMagnitudeMean"
+"FrequencyBodyBodyGyroscopeMagnitudeMean"
+"FrequencyBodyBodyGyroscopeJerkMagnitudeMean"
+"TimeBodyAccelometerStandardDeviationX"
+"TimeBodyAccelometerStandardDeviationY"
+"TimeBodyAccelometerStandardDeviationZ"
+"TimeGravityAccelometerStandardDeviationX"
+"TimeGravityAccelometerStandardDeviationY"
+"TimeGravityAccelometerStandardDeviationZ"
+"TimeBodyAccelometerJerkStandardDeviationX"
+"TimeBodyAccelometerJerkStandardDeviationY"
+"TimeBodyAccelometerJerkStandardDeviationZ"
+"TimeBodyGyroscopeStandardDeviationX"
+"TimeBodyGyroscopeStandardDeviationY"
+"TimeBodyGyroscopeStandardDeviationZ"
+"TimeBodyGyroscopeJerkStandardDeviationX"
+"TimeBodyGyroscopeJerkStandardDeviationY"
+"TimeBodyGyroscopeJerkStandardDeviationZ"
+"TimeBodyAccelometerMagnitudeStandardDeviation"
+"TimeGravityAccelometerMagnitudeStandardDeviation"
+"TimeBodyAccelometerJerkMagnitudeStandardDeviation"
+"TimeBodyGyroscopeMagnitudeStandardDeviation"
+"TimeBodyGyroscopeJerkMagnitudeStandardDeviation"
+"FrequencyBodyAccelometerStandardDeviationX"
+"FrequencyBodyAccelometerStandardDeviationY"
+"FrequencyBodyAccelometerStandardDeviationZ"
+"FrequencyBodyAccelometerJerkStandardDeviationX"
+"FrequencyBodyAccelometerJerkStandardDeviationY"
+"FrequencyBodyAccelometerJerkStandardDeviationZ"
+"FrequencyBodyGyroscopeStandardDeviationX"
+"FrequencyBodyGyroscopeStandardDeviationY"
+"FrequencyBodyGyroscopeStandardDeviationZ"
+"FrequencyBodyAccelometerMagnitudeStandardDeviation"
+"FrequencyBodyBodyAccelometerJerkMagnitudeStandardDeviation"
+"FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation"
+"FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
+"TypeActivity"										factor					1 WALKING
+																			2 WALKING_UPSTAIRS
+																			3 WALKING_DOWNSTAIRS
+																			4 SITTING
+																			5 STANDING
+																			6 LAYING
+																			
+"Subject"											numeric					range(1, 30)
