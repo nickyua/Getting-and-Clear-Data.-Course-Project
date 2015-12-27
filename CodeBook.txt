@@ -17,11 +17,11 @@ These signals were used to estimate variables of the feature vector for each pat
 For every pair TypeActivity-Subject - there are in dataframe mean for all observations 
 
 VARIABLE									TYPE			VALUES OR AND EXPLANTATION
-"TimeBodyAccelometerMeanX" 					numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body signal
-"TimeBodyAccelometerMeanY"					numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body signal
-"TimeBodyAccelometerMeanZ"					numeric			range(-1, 1), mean for features come from the accelerometer, z directional, body signal
-"TimeGravityAccelometerMeanX"				numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body gravity signal
-"TimeGravityAccelometerMeanY"				numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body gravity signal
+"TimeBodyAccelometerMeanX" 							numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body signal
+"TimeBodyAccelometerMeanY"							numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body signal
+"TimeBodyAccelometerMeanZ"							numeric			range(-1, 1), mean for features come from the accelerometer, z directional, body signal
+"TimeGravityAccelometerMeanX"							numeric			range(-1, 1), mean for features come from the accelerometer, x directional, body gravity signal
+"TimeGravityAccelometerMeanY"							numeric			range(-1, 1), mean for features come from the accelerometer, y directional, body gravity signal
 "TimeGravityAccelometerMeanZ"				.....			....
 "TimeBodyAccelometerJerkMeanX"				.....			....
 "TimeBodyAccelometerJerkMeanY"
@@ -83,11 +83,11 @@ VARIABLE									TYPE			VALUES OR AND EXPLANTATION
 "FrequencyBodyBodyAccelometerJerkMagnitudeStandardDeviation"
 "FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation"
 "FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
-"TypeActivity"										factor					1 WALKING
+"TypeActivity"									factor					1 WALKING
 																2 WALKING_UPSTAIRS
 																3 WALKING_DOWNSTAIRS
 																4 SITTING
 																5 STANDING
 																6 LAYING
 																			
-"Subject"											integer					range(1, 30)
+"Subject"									integer					range(1, 30)
