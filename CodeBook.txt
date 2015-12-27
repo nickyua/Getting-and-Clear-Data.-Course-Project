@@ -83,11 +83,11 @@ VARIABLE									TYPE			VALUES OR AND EXPLANTATION
 "FrequencyBodyBodyAccelometerJerkMagnitudeStandardDeviation"
 "FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation"
 "FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation"
-"TypeActivity"									factor					1 WALKING
-															2 WALKING_UPSTAIRS
-															3 WALKING_DOWNSTAIRS
-															4 SITTING
-															5 STANDING
-															6 LAYING
+"TypeActivity"									factor					 WALKING
+															 WALKING_UPSTAIRS
+															 WALKING_DOWNSTAIRS
+															 SITTING
+															 STANDING
+															 LAYING
 																			
 "Subject"									integer					range(1, 30)
